@@ -1,0 +1,269 @@
+html[data-theme="light"]{
+    --bg: #e0e5ec;
+    --fg: white;
+
+    // --gradientS: #ff2ec4;
+    // --gradientE: #fabd6d;
+
+    --gradientS: #00c6ff;
+    --gradientE: #0072ff;
+
+    //Linear gradient background
+    --lightGrad: linear-gradient(to right, var(--gradientS), var(--gradientE));
+
+    --boxShadowd: #d1cdc7;
+    --boxShadowl: #ffffff;
+
+    --textH: rgba(0, 0, 0, 0.8);
+    --textHM: rgba(0, 0, 0, 0.77);
+    --textM: rgba(0, 0, 0, 0.75);
+    --textML: rgba(0, 0, 0, 0.4);
+    --textL: rgba(0, 0, 0, 0.3);
+
+    //colors for notiication
+    --noti-read: rgba(0, 0, 0, 0.68);
+    --noti-unread: rgba(0, 0, 0, 0.78);
+    --lightbg: rgba(255, 255, 255, 0.6);
+    
+    --info: rgba(51, 51, 51, 0.816);
+    --au: rgba(51, 51, 51);
+    --i: rgba(51, 51, 51, 0.815);
+    
+    --rtn: #55b9f3;
+
+    // Color for mobile UI
+    //040405
+    //242424
+    //2e3133
+    
+    //f7f7f7
+    //f3f3f3
+    --mbg: #f3f3f3;
+    --mfg: #ffffff;
+}
+html[data-theme="dark"]{
+    --bg: #1a1b1e;
+    --fg: #1A1B1E;
+
+    --boxShadowd: #151518;
+    --boxShadowl: #242529;
+
+    // --gradientS: #6b11fd;
+    // --gradientE: #bb5fff;
+
+    --gradientS: #00c6ff;
+    --gradientE: #0072ff;
+    
+    //Linear gradient background
+    --lightGrad: linear-gradient(to right, var(--gradientS), var(--gradientE));
+
+    --inBg: #333; 
+    --textH: rgba(255, 255, 255, 0.8);
+    --textHM: rgba(255, 255, 255, 0.7);
+    --textM: rgba(255, 255, 255, 0.5);
+    --textML: rgba(255, 255, 255, 0.4);
+    --textL: rgba(255, 255, 255, 0.3);
+    --linksH: #4099FF; 
+
+    //Colors for notification
+    --noti-read: rgba(255, 255, 255, 0.68);
+    --noti-unread: rgba(255, 255, 255, 0.78);
+
+    //Colours for mobile UI
+    --mbg: #000000;
+    --mfg: #222224;
+    --lightbg: rgba(58, 60, 70, 0.856);
+
+    .header input[type='text']{
+        background: #333;
+        border: none;
+        color: var(--textH);
+    }
+
+    .options ul li:hover{
+        background-color: #333;
+    }
+    
+    .left article, .comments-panel{
+        box-shadow:  10px 10px 20px #151518, 
+                     -10px -10px 20px #242529;
+    }
+    .comments textarea{
+        background: #333;
+        color: var(--textM);
+        margin-top: 20px;
+        border: none;
+        box-shadow:  10px 10px 20px #151518, 
+                     -10px -10px 20px #242529;
+    }
+    i{
+        color: #fff;
+    }
+
+    .header input::placeholder{
+        color: var(--textM);
+    }    
+
+    .f-box{
+        background: var(--bg);
+        box-shadow:  10px 10px 20px #151518, 
+                     -10px -10px 20px #242529;
+    }
+    .f-toggle{
+        color: var(--textH);
+    }
+    .i-box{
+        color: var(--textHM);
+    }
+}
+body{
+    background: var(--bg);
+}
+
+.post, .header, .user-space, .post-form,
+.left article, .comments-panel, .comments .ua-c{
+    background: var(--bg);
+    box-shadow:  10px 10px 20px var(--boxShadowd), 
+                 -10px -10px 20px var(--boxShadowl);
+}
+.load-more{
+    background: var(--bg);
+    box-shadow: 10px 10px 20px var(--boxShadowd), 
+                -10px -10px 20px var(--boxShadowl);;
+}
+
+.header h3{
+    color: var(--textH);
+}
+.header nav ul li a{
+    color: var(--textM);
+}
+.header nav ul li a:hover{
+    color: var(--linksH);
+}
+
+.user-space .u-n a{
+    color: var(--textH);
+}
+.user-space p{
+    color: var(--textHM);
+}
+
+
+.featured .contentx .ctop{
+    background: linear-gradient(135deg, var(--gradientS) 20%, var(--gradientE))100%;
+}
+.post h3{
+    color: var(--textH);
+}
+.post, .post li, .user-space{
+    background: var(--bg);
+}
+.posts .intro{
+    color: var(--textHM);
+}
+.posts .info{
+    color: var(--textM);
+}
+.posts .views i, .posts .comments i{
+    color: var(--textML);
+    // color: var(--gradientS);
+}
+.posts .views, .posts .comments{
+    color: var(--textML);
+    // color: var(--gradientS);
+}
+.posts .author{
+    color: var(--textM);
+}
+.posts .author a{
+    // color: var(--gradientS);
+    color: var(--textHM);
+}
+.posts .time-stamp{
+    color: var(--textL);
+    // color: var(--gradientE);
+}
+.load-more:hover{
+    box-shadow: 0px 15px 20px var(--gradientS);
+}
+
+.news li{
+    border-left: 3px solid var(--gradientS);
+}
+.lm button{
+    color: var(--textHM);
+}
+.right .sps li .specs{
+    color: var(--textHM);
+}.right .sps li .specs a{
+    color: var(--textH);
+}
+
+
+/*view post page*/
+.left article .a-t{
+    color: var(--textH);
+}
+.left article .a-body{
+    color: var(--textM);
+}
+.left article .a-options a{
+    color: var(--gradientS);
+}
+.a-options{
+    border-top: 1px solid var(--gradientS);
+}
+.a-options a{
+    color: var(--textHM);
+}
+.a-options span a:hover{
+    color: var(--gradientE);
+}
+.ua-c{
+    color: var(--textHM);
+}
+
+.comments .comments-panel::before,
+.comments .comments-panel::after{
+    background: linear-gradient(135deg, var(--gradientS) 20%, var(--gradientE))100%;
+}
+.comments-panel .c-a-info{
+    color: var(--textM);
+}
+.comments-panel .c-t-date{
+    color: var(--textL);
+}
+.c-a-name a{
+    color: var(--textH);
+}
+.c-options ul li a{
+    color: var(--gradientS);
+}
+.c-options ul li a:hover{
+    color: var(--gradientE);
+}
+
+.right .a-name a{
+    color: var(--textH);
+}
+.right .a-lvl, .right .a-sm span{
+    color: var(--textM);
+}
+.top .news li a{
+    color: var(--textHM);
+}
+
+.post-form .char{
+    color: var(--textM);
+}
+.post-form textarea, .post-form input[type='text']{
+    background: var(--inBg);
+    color: var(--textHM);
+}
+.post-form .pfTitle{
+    color: var(--textH);
+}
+.post-content .p-banner{
+    color: var(--textHM);
+}
