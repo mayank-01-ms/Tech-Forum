@@ -1,5 +1,5 @@
-Built from scratch - A user based forum / a discussion site for tech geeks. 
-Features:
+Built from scratch - A user-based forum / a discussion site for tech geeks. 
+This forum / a discussion site has following features:
 Responsive
 Has both light and dark theme
 Users can post articles in different categories
