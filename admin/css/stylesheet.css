@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    width: 1210px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 120px;
+}
+.a-options{
+    height: 100%;
+    max-height: 100%;
+    width: 250px;
+    background: linear-gradient(135deg, var(--gradientS) 20%, var(--gradientE) 100%);
+    position: fixed;
+    top: 110;
+    left: auto;
+    margin-top: 20px;
+}
+.aUL{
+    list-style: none;
+    margin: 20px 20px 0px 20px;
+}
+.aUL li{
+    cursor: pointer;
+    height: 50px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    transition: 0.5s ease;
+    color:#fff;
+    font-size: small;
+}
+.aUL .active{
+    background: #fff;
+    color: dodgerblue;
+}
+.aUL li:hover{
+    background: rgb(255, 255, 255);
+    color: dodgerblue;
+}
+.aUL li i{
+    font-size: large;
+    padding: 0 10px;
+    color: violet;
+}
+.aUL li:hover a{
+    color: dodgerblue;
+}
+.a-content{
+    margin: 20px 20px 0px 280px;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--bg);
+    box-shadow:  10px 10px 20px var(--boxShadowd), 
+                 -10px -10px 20px var(--boxShadowl);
+}
+.a-content h2{
+    text-transform: uppercase;
+    margin: 10px 0px;
+    color: var(--textHM);
+}
+.a-content .a-msg{
+    margin-top: 20px;
+    font-size: small;
+}
+.ipanel ol li{
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+.ipanel input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.ipanel input[type=number]{
+    -moz-appearance: textfield;
+}
+.ipanel textarea{
+    resize: none;
+    height: 50px;
+    width: 400px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0px 15px;
+    transform: translateY(7px);
+    background: var(--mfg);
+    color: var(--textHM);
+}
+.ipanel .ipinp{
+    border-radius: 5px;
+    width: 150px;
+    height: 15px;
+    padding: 5px;
+    background: var(--mfg);
+    color: var(--textHM);
+}
+.ipanel .ipint{
+    border-radius: 5px;
+    width: 250px;
+    height: 10px;
+    padding: 5px;
+    margin-left: 15px;
+    background: var(--mfg);
+    color: var(--textHM);
+}
+.ipanel select:hover{
+    cursor: pointer;
+}
+.f-btn{
+    margin-top: 10px;
+    height: 35px;
+    width: 90px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: center;
+    background: linear-gradient( 135deg, var(--gradientS) 20%, var(--gradientE) 100%);
+    color: white;
+}
+.a-content .va{
+    display: flex;
+    justify-content: center;
+}
+.va table{
+    border: 1px dashed #333;
+    color: var(--textM);
+}
+.va a{
+    color: var(--textHM);
+}
+.va thead{
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.va tbody td{
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+.va tbody tr:nth-child(even){
+    background: rgba(0, 0, 0, 0.1);
+}
+.va td:nth-child(1){
+    width: 90px;
+}
+.va td:nth-child(2){
+    width: 120px;
+}
+.va td:nth-child(3){
+    width: 150px;
+}
+.va td:nth-child(4){
+    width: 250px;
+}
+.va td:nth-child(5){
+    width: 150px;
+}
+.va table a:hover{
+    text-decoration: underline;
+}
+.va thead td{
+    height: 40px;
+}
+.va tbody img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.ipanel select{
+    background: var(--mbg);
+    color: var(--textHM);
+}
+.ext-opt{
+    margin-top: 15px;
+}
+.ext-opt a{
+    color: var(--textHM);
+}
+
+@media only screen and (max-width: 600px){
+    /* .a-options{
+        display: none;
+    } */
+}

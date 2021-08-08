@@ -1,0 +1,15 @@
+#turn RewriteEngine ON
+RewriteEngine On
+
+#RewriteRule for posts
+RewriteRule ^view-post/([a-zA-Z0-9-/]+)$ view-post.php?title=$1 [NC,L]
+RewriteRule ^view-post/([a-zA-Z-0-9-]+)/ view-post.php?title=$1 [NC,L]
+
+#RewriteRule for profile
+RewriteRule ^view-profile/([0-9a-zA-Z_]+)$ view-profile.php?name=$1 [NC,L]
+RewriteRule ^view-profile/([0-9a-zA-Z_]+)/ view-profile.php?name=$1 [NC,L]
+
+#RewriteRule for categories
+RewriteRule ^category/([0-9a-zA-Z_]+)$ posts.php?name=$1 [NC,L]
+
+ErrorDocument 404 /error.php
