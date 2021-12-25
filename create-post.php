@@ -68,7 +68,7 @@ if ($loggedIn == true){
     <?php 
     if ($canPost == 1){
     ?>
-    <script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/fc0qclzntxn2ot76rapk4e9qnuv15m4heqig46zd523nlu6q/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
             tinymce.init({
                 selector: "textarea",

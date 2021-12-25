@@ -793,11 +793,8 @@ html[data-theme="dark"] .header .head-title{
     margin: 40px auto;
 }
 .p-str{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 920px 270px;
-    grid-column-gap: 12px;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 .post-content .p-banner{
     margin: 5px 0px;
@@ -847,6 +844,10 @@ html[data-theme="dark"] .header .head-title{
     resize: none;
     border-radius: 5px;
     font-size: 16px;
+}
+.p-right{
+    margin-left: 1rem;
+    min-width: 270px;
 }
 .p-right .p-banner{
     display: flex;
