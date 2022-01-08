@@ -845,7 +845,7 @@ html[data-theme="dark"] .header .head-title{
     border-radius: 5px;
     font-size: 16px;
 }
-.p-right{
+.post-form .p-right{
     margin-left: 1rem;
     min-width: 270px;
 }
