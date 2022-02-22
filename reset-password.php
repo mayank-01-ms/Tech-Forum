@@ -32,6 +32,9 @@ $msg = '';
 $found = 0;
 $greetUserName = '';
 
+// to compare date with the expires time in the DB
+date_default_timezone_set("Asia/Calcutta");
+
 $selector = isset($_GET['selector']) ? $_GET['selector'] : false;
 $validator = isset($_GET['validator']) ? $_GET['validator'] : false;
 
@@ -52,7 +55,7 @@ if ($selector == false || $validator == false){
             if(date("U") > $expires){
                 $auth->deleteToken($uid);
             } else{
-                // found should be one iff currernt date is less than expires
+                // found should be one iff current date is less than expires
                 $found = 1;
                 $greetUserName = $user->userName($uid);
             }
