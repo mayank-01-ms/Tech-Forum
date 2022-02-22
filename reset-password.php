@@ -44,13 +44,20 @@ if ($selector == false || $validator == false){
     if (ctype_xdigit($selector) !== false && ctype_xdigit($validator) !== false){
         
         $resetData = $auth->pwdResetData($selector);
-        if ($resetData != -1){
+        if($resetData != -1){
+            $expires = $resetData['expires'];
             $uid = $resetData['uid'];
-            $found = 1;
-            $greetUserName = $user->userName($uid);
-        }
 
-        else{
+            // if current date is greater than expires one delete token and show broken link message
+            if(date("U") > $expires){
+                $auth->deleteToken($uid);
+            } else{
+                // found should be one iff currernt date is less than expires
+                $found = 1;
+                $greetUserName = $user->userName($uid);
+            }
+        }
+        if($found !== 1){
             $msg = '<div style="color: var(--textM);" >';
             $msg .= 'The link seems to be broken. You need to request for resetting password again. ';
             $msg .= 'Click <a href="'.$metaInfo['domain'].'/forgot-password.php" style="color: var(--gradientE);">here </a>to request again. <br>';
