@@ -111,10 +111,10 @@ if (isset($_POST['action']) && $_POST['action'] == 'rp'){
 
                         mail($to, $subject, $message, $headers);
 
-                        //Delete existing tokens after sending notification to the uid
-                        $auth->deleteToken($pwdResetData['uid']);
                         echo 1;
                     }
+                    //Delete tokens in both the case since they are of no use once they are used or expired
+                    $auth->deleteToken($pwdResetData['uid']);
                 }
             }
         }
