@@ -38,7 +38,7 @@ $validator = isset($_GET['validator']) ? $_GET['validator'] : false;
 if ($selector == false || $validator == false){
     $msg = '<div style="color: var(--textM);">';
     $msg .= 'Something went wrong. If you think you are here by mistake. ';
-    $msg .= 'Click <a href="'.$metaInfo['domain'].'" style="color: var(--textHM);">here</a> to go to homepage. ';
+    $msg .= 'Click <a href="'.$metaInfo['domain'].'" style="color: var(--gradientE);">here</a> to go to homepage. ';
     $msg .= '</div>';
 } else {
     if (ctype_xdigit($selector) !== false && ctype_xdigit($validator) !== false){
@@ -52,17 +52,17 @@ if ($selector == false || $validator == false){
 
         else{
             $msg = '<div style="color: var(--textM);" >';
-            $msg .= 'The link seems to be broken. You need to request for resetting password again';
-            $msg .= 'Click <a href="'.$metaInfo['domain'].'/forgot-password.php" style="color: var(--textHM);">here </a>to request again. <br>';
-            $msg .= 'Click <a href="'.$metaInfo['domain'].'" style="color: var(--textHM);">here</a> to go to homepage. ';
+            $msg .= 'The link seems to be broken. You need to request for resetting password again. ';
+            $msg .= 'Click <a href="'.$metaInfo['domain'].'/forgot-password.php" style="color: var(--gradientE);">here </a>to request again. <br>';
+            $msg .= 'Click <a href="'.$metaInfo['domain'].'" style="color: var(--gradientE);">here</a> to go to homepage. ';
             $msg .= '</div>';
         }
 
     } else{
         $msg = '<div style="color: var(--textM);" >';
-        $msg .= 'The link seems to be broken. You need to request for resetting password again';
-        $msg .= 'Click <a href="'.$metaInfo['domain'].'/forgot-password.php" style="color: var(--textHM);">here </a>to request again. <br>';
-        $msg .= 'Click <a href="'.$metaInfo['domain'].'" style="color: var(--textHM);">here</a> to go to homepage. ';
+        $msg .= 'The link seems to be broken. You need to request for resetting password again. ';
+        $msg .= 'Click <a href="'.$metaInfo['domain'].'/forgot-password.php" style="color: var(--gradientE);">here </a>to request again. <br>';
+        $msg .= 'Click <a href="'.$metaInfo['domain'].'" style="color: var(--gradientE);">here</a> to go to homepage. ';
         $msg .= '</div>';
     }
 }
